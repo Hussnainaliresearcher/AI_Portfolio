@@ -1,0 +1,1 @@
+# These are skills that i have acquired over time.

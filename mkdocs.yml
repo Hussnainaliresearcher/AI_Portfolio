@@ -1,0 +1,111 @@
+# =========================
+# 📘 SITE CONFIGURATION
+# =========================
+site_name: "Hussnain Ali — Data Scientist & AI Developer"
+site_description: "My personal portfolio website"
+site_author: "Hussnain Ali"
+site_url: "https://your-portfolio-link.com"
+
+# =========================
+# 📂 NAVIGATION
+# =========================
+nav:
+  - 🏠 Home: index.md
+  - 💼 Projects: projects.md
+  - ⚙️ Skills: skills.md
+  - 📝 Blog: blog.md
+  - 📄 Resume: resume.md
+  - 👨‍💻 About: about.md
+
+# =========================
+# 🎨 THEME CONFIGURATION
+# =========================
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: "Roboto"
+    code: "JetBrains Mono"
+  icon:
+    logo: material/robot
+    repo: fontawesome/brands/github
+  favicon: images/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - content.code.annotate
+    - content.code.copy
+    - toc.integrate
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.tooltips
+    - content.footer
+    - content.code.annotate
+
+# =========================
+# 🔍 PLUGINS
+# =========================
+plugins:
+  - search
+  - tags
+
+# =========================
+# 🧩 MARKDOWN EXTENSIONS
+# =========================
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.keys
+  - toc:
+      permalink: true
+
+# =========================
+# 🌐 REPOSITORY (OPTIONAL)
+# =========================
+repo_name: "hussnain-ali/portfolio"
+repo_url: "https://github.com/hussnain-ali/portfolio"
+edit_uri: ""
+
+# =========================
+# 🏷️ EXTRA SETTINGS
+# =========================
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hussnain-ali
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourprofile
+      name: LinkedIn
+    - icon: fontawesome/solid/envelope
+      link: mailto:your.email@example.com
+      name: Email
+    - icon: fontawesome/brands/python
+      link: https://www.python.org
+      name: Python
+  copyright: "© 2025 Hussnain Ali. All rights reserved."

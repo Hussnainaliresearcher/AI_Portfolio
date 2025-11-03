@@ -1,0 +1,15 @@
+site_name: Portfolio
+site_description: My personal portfolio website
+nav:
+  - Home: index.md
+  - Projects: projects.md
+  - Skills: skills.md
+  - Resume: resume.md
+  - About: about.md
+  
+theme: mkdocs
+# theme:
+#   name: material
+# theme:
+#   name: 'readthedocs'
+       
