@@ -75,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#welcome-to-my-portfolio" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -393,21 +388,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    🏠 Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -420,43 +400,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#my-social-media-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      My Social Media Links
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -588,19 +531,103 @@
 
 
 
-<h1 id="welcome-to-my-portfolio">Welcome to My Portfolio<a class="headerlink" href="#welcome-to-my-portfolio" title="Permanent link">&para;</a></h1>
-<p>For full list of Projects and repositories, Visit <a href="https://github.com/Hussnainaliresearcher">My github Portfolio</a>.</p>
-<h2 id="my-social-media-links">My Social Media Links<a class="headerlink" href="#my-social-media-links" title="Permanent link">&para;</a></h2>
+<style>
+/* 🌐 Responsive Layout for AI Portfolio */
+.portfolio-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 90vh;
+}
+
+/* 🧠 Left Content */
+.portfolio-text {
+  flex: 1;
+  padding-right: 30px;
+  min-width: 280px;
+}
+
+/* 🖼️ Right Image */
+.portfolio-image {
+  flex: 0 0 220px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  min-width: 180px;
+}
+
+.portfolio-image img {
+  border-radius: 50%;
+  width: 200px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio-text {
+    padding-right: 0;
+  }
+
+  .portfolio-image {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-image img {
+    width: 160px;
+  }
+}
+</style>
+
+<div class="portfolio-container">
+
+<!-- Left Side Content -->
+<div class="portfolio-text">
+
+<h1>👋 Hi, I'm <strong>Hussnain Ali</strong></h1>
+<h3>🧬 Data Scientist | 🤖 AI Developer | 🌱 Researcher in Sustainable Agriculture</h3>
+
+
+<p>
+Welcome to my <strong>AI Portfolio</strong> — where technology meets sustainability.<br>
+
+I design and develop intelligent systems using <strong>Machine Learning</strong>, <strong>Data Science</strong>, and <strong>Generative AI</strong> to create data-driven solutions that make a real-world impact.
+</p>
+
+<p>✨ 
+🚀 <strong>Passionate about:</strong> Building models that learn from data and improve lives.</p>
+
+<hr>
+
+<h3>🔗 Quick Links</h3>
 <ul>
-<li><a href="https://www.linkedin.com/in/hussnain-ali-7162b2344/">LinkedIn</a></li>
-<li>
-<p><a href="https://github.com/Hussnainaliresearcher">GitHub</a></p>
-</li>
-<li>
-<p><a href="https://www.facebook.com/profile.php?id=61565773621321">Facebook</a></p>
-</li>
+<li>💼 <a href="https://github.com/Hussnainaliresearcher" target="_blank"><strong>My GitHub Portfolio</strong></a></li>
+<li>💬 <a href="https://www.linkedin.com/in/hussnain-ali-7162b2344/" target="_blank"><strong>LinkedIn</strong></a></li>
+<li>🌐 <a href="https://www.facebook.com/profile.php?id=61565773621321" target="_blank"><strong>Facebook</strong></a></li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
+
+</div>
+
+<!-- Right Side Image -->
+<div class="portfolio-image">
+  <img src="assets/images/profile.png" alt="My Photo">
+</div>
+
+</div>
 
 
 
